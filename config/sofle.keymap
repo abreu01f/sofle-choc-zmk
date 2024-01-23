@@ -12,20 +12,13 @@
 #define l1_art 1
 #define l2_art 2
 #define layer_3 3
-#define layer_4 3
+#define layer_4 4
 
 
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <1 1>;
-            then-layer = <2>;
-        };
-    };
+    
 
     combos {
         compatible = "zmk,combos";
