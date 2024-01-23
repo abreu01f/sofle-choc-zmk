@@ -41,64 +41,6 @@
         };
     };
 
-    behaviors {
-        dtap_comm: dtap_comm {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_COMM";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LBKT>;
-
-            tapping-term-ms = <50>;
-        };
-
-        dtap_dot: dtap_dot {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_DOT";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp RIGHT_BRACKET>;
-
-            tapping-term-ms = <50>;
-        };
-
-        dtap_plus: dtap_plus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_PLUS";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp KP_ASTERISK>;
-
-            tapping-term-ms = <50>;
-        };
-
-        dtap_minus: dtap_minus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_MINUS";
-            #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp MINUS>, <&kp KP_DIVIDE>;
-        };
-
-        dtap_slash: dtap_slash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_SLASH";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp BSLH>;
-        };
-
-        dtap_quote: dtap_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_QUOTE";
-            #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp SINGLE_QUOTE>;
-        };
-
-        dtap_del: dtap_del {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAP_DEL";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
