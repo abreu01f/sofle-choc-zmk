@@ -8,10 +8,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define BASE 0
-#define LOWER 1
-#define RAISE 2
-#define ADJUST 3
+#define default_layer 0
+#define l1_art 1
+#define l2_art 2
+#define layer_3 3
+#define layer_4 3
+
 
 / {
     // Activate ADJUST layer by pressing raise and lower
