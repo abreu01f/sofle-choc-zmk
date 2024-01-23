@@ -97,41 +97,6 @@
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
         };
-
-        bt_profile0: bt_profile0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_PROFILE0";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&bt BT_DISC 0>;
-        };
-
-        bt_profile1: bt_profile1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_PROFILE1";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&bt BT_DISC 1>;
-        };
-
-        bt_profile2: bt_profile2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_PROFILE2";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
-        };
-
-        bt_profile3: bt_profile3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_PROFILE3";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3>, <&bt BT_DISC 3>;
-        };
-
-        bt_profile4: bt_profile4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_PROFILE4";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&bt BT_DISC 4>;
-        };
     };
 
     keymap {
