@@ -17,12 +17,120 @@
 
 / {
 
-   // Activate ADJUST layer by pressing raise and lower
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+    combos {
+        compatible = "zmk,combos";
+
+        RSFT_RSPC_RCTL {
+            bindings = <&kp RCTRL>;
+            key-positions = <56 55>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        rspc_rbkspc_del {
+            bindings = <&kp DEL>;
+            key-positions = <54 55>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        redo3tap {
+            bindings = <&kp K_REDO>;
+            key-positions = <4 3 2>;
+            layers = <3>;
+        };
+    };
+
+    behaviors {
+        dtap_comm: dtap_comm {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_COMM";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LBKT>;
+
+            tapping-term-ms = <50>;
+        };
+
+        dtap_dot: dtap_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp RIGHT_BRACKET>;
+
+            tapping-term-ms = <50>;
+        };
+
+        dtap_plus: dtap_plus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_PLUS";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp KP_ASTERISK>;
+
+            tapping-term-ms = <50>;
+        };
+
+        dtap_minus: dtap_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_MINUS";
+            #binding-cells = <0>;
+            tapping-term-ms = <50>;
+            bindings = <&kp MINUS>, <&kp KP_DIVIDE>;
+        };
+
+        dtap_slash: dtap_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BSLH>;
+        };
+
+        dtap_quote: dtap_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp SINGLE_QUOTE>;
+        };
+
+        dtap_del: dtap_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_DEL";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+        };
+
+        bt_profile0: bt_profile0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_PROFILE0";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_DISC 0>;
+        };
+
+        bt_profile1: bt_profile1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_PROFILE1";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&bt BT_DISC 1>;
+        };
+
+        bt_profile2: bt_profile2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_PROFILE2";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
+        };
+
+        bt_profile3: bt_profile3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_PROFILE3";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&bt BT_DISC 3>;
+        };
+
+        bt_profile4: bt_profile4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_PROFILE4";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&bt BT_DISC 4>;
         };
     };
 
