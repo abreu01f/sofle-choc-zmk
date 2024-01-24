@@ -165,7 +165,7 @@
         layer_3 {
 			label = "layer_3";
             bindings = <
-&kp C_AL_CALC    &kp LS(LG(S))   &kp LC(A)           &kp LC(C)   		&kp C_AC_UNDO       	&kp LC(V)                        &none    &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
+&kp C_AL_CALC    &kp LS(LG(S))   &kp LC(A)           &kp LC(C)   		&kp LC(Z)       	&kp LC(V)                        &none    &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
 &kp CAPS      &kp ESCAPE      &kp LC(LEFT_ARROW)  &kp UP_ARROW      &kp LC(RIGHT_ARROW)  &kp PG_UP                              &none  &none  &kp KP_N7       &kp KP_N8      &kp KP_N9        &kp KP_PLUS
 &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp LC(Z)      &kp PG_DN                              &none  &none  &kp KP_N4       &kp KP_N5      &kp KP_N6        &kp KP_ENTER
 &tog 4        &kp LEFT_SHIFT  &kp C_PREV          &kp C_PLAY_PAUSE  &kp C_NEXT           &kp C_SNAPSHOT          &kp C_MUTE    		&none  &none  &kp KP_N1       &kp KP_N2      &kp KP_N3        &dtap_del
