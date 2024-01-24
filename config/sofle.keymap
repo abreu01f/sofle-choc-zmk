@@ -34,6 +34,13 @@
             layers = <0>;
         };
 
+        lctl_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <51 52>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
         redo3tap {
             bindings = <&kp K_REDO>;
             key-positions = <4 3 2>;
