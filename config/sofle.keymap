@@ -159,7 +159,7 @@
 				                                                                      &trans      &trans  &trans &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(C_AC_SCROLL_UP) LS(C_AC_SCROLL_DOWN) &inc_dec_kp PG_UP PG_DN)>;
+            sensor-bindings = <&inc_dec_kp LS(C_AC_SCROLL_UP) LS(C_AC_SCROLL_DOWN) &inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_3 {
