@@ -157,10 +157,10 @@
         layer_3 {
 			label = "layer_3";
             bindings = <
-&kp K_CALC    &kp LS(LG(S))   &kp LC(A)           &kp K_COPY   		&kp K_UNDO       	&kp K_PASTE                        &bt BT_PRV    &bt BT_NXT    &trans  &trans  &trans  &trans
-&kp CAPS      &kp ESCAPE      &kp LC(LEFT_ARROW)  &kp UP_ARROW      &kp LC(RIGHT_ARROW)  &kp PG_UP                              &bt BT_CLR    &bt_profile0  &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp PG_DN                              &bt_profile1  &bt_profile2  &trans  &trans  &trans  &trans
-&tog 4        &kp LEFT_SHIFT  &kp K_PREV          &kp K_PLAY_PAUSE  &kp K_NEXT           &kp F12          &kp K_MUTE    		&bt_profile3  &bt_profile4  &trans  &trans  &trans  &trans
+&kp K_CALC    &kp LS(LG(S))   &kp LC(A)           &kp K_COPY   		&kp K_UNDO       	&kp K_PASTE                        &trans    &trans    &trans  &trans  &trans  &trans
+&kp CAPS      &kp ESCAPE      &kp LC(LEFT_ARROW)  &kp UP_ARROW      &kp LC(RIGHT_ARROW)  &kp PG_UP                              &trans    &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp PG_DN                              &trans  &trans  &trans  &trans  &trans  &trans
+&tog 4        &kp LEFT_SHIFT  &kp K_PREV          &kp K_PLAY_PAUSE  &kp K_NEXT           &kp F12          &kp K_MUTE    		&trans  &trans  &trans  &trans  &trans  &trans
                               &none               &to 0             &kp LCTRL            &none            &none         &trans  &trans        &trans        &trans  &trans
 						                                                                   &kp K_APP      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
