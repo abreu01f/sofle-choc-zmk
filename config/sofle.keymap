@@ -127,7 +127,7 @@
         };
 
         l1_art {
-			label = "l1_art"
+			label = "l1_art";
             bindings = <
 &kp LC(LALT)  &kp LCTRL  &kp LC(D)  &kp LCTRL  &kp LSHFT  &kp P                            &none  &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
 &kp SPACE     &kp TAB    &kp F      &kp E      &kp Z      &kp C                            &none  &none  &kp KP_N7       &kp KP_N8      &kp KP_N9        &kp KP_PLUS
@@ -141,7 +141,7 @@
         };
 
         l2_art {
-			label = "l2_art"
+			label = "l2_art";
             bindings = <
 &kp N4  &kp N4     &kp LC(A)  &kp LC(C)  &kp LC(V)  &kp F7                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp N3  &kp F8     &kp F1     &kp J      &kp G      &kp Q                     &trans  &trans  &trans  &trans  &trans  &trans
@@ -155,7 +155,7 @@
         };
 
         layer_3 {
-			label = "layer_3"
+			label = "layer_3";
             bindings = <
 &kp K_CALC    &kp LS(LG(S))   &kp LC(A)           &kp K_COPY   		&kp K_UNDO       	&kp K_PASTE                        &bt BT_PRV    &bt BT_NXT    &trans  &trans  &trans  &trans
 &kp CAPS      &kp ESCAPE      &kp LC(LEFT_ARROW)  &kp UP_ARROW      &kp LC(RIGHT_ARROW)  &kp PG_UP                              &bt BT_CLR    &bt_profile0  &trans  &trans  &trans  &trans
@@ -169,7 +169,7 @@
         };
 			
 		layer_4 {
-			label = "layer_4"
+			label = "layer_4";
             bindings = <
 &none   &none  &none   &none    &none    &none                    &none    &none    &none    &none    &none  &none
 &none   &none  &kp F1  &kp F2   &kp F3   &kp F4                   &kp F13  &kp F14  &kp F15  &kp F16  &none  &none
