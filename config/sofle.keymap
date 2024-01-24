@@ -36,7 +36,7 @@
 
 	lspc_lent_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <52 53>;
+            key-positions = <52 51>;
             timeout-ms = <20>;
             layers = <0>;
         };
