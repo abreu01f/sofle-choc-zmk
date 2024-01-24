@@ -42,7 +42,7 @@
         };
 
         redo3tap {
-            bindings = <&kp C_AC_REDO>;
+            bindings = <&kp LC(Y)>;
             key-positions = <4 3 2>;
             layers = <3>;
         };
@@ -55,16 +55,16 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LBKT>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
         };
 
         dtap_dot: dtap_dot {
             compatible = "zmk,behavior-tap-dance";
             label = "DTAP_DOT";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp RIGHT_BRACKET>;
+            bindings = <&kp PERIOD>, <&kp RIGHT_BRACKET>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
         };
 
         dtap_plus: dtap_plus {
@@ -73,7 +73,7 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp KP_ASTERISK>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
         };
 
         dtap_minus: dtap_minus {
@@ -95,7 +95,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DTAP_QUOTE";
             #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp SEMI>;
         };
 
         dtap_del: dtap_del {
@@ -130,7 +130,7 @@
 						                                                                   &kp K_APP      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_DN PG_UP>;
         };
 
         l1_art {
@@ -144,7 +144,7 @@
 						                                                                    &kp LC(T)      &kp LC(Y)  &kp LBKT &kp LC(Z)  &kp RBKT
             >;
 
-		sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;            
+		sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_DN PG_UP>;            
 
         };
 
@@ -159,21 +159,21 @@
 				                                                                      &trans      &trans  &trans &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DEL END &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp DEL END &inc_dec_kp PG_DN PG_UP>;
         };
 
         layer_3 {
 			label = "layer_3";
             bindings = <
-&kp C_AL_CALC    &kp LS(LG(S))   &kp LC(A)           &kp C_AC_COPY   		&kp C_AC_UNDO       	&kp C_AC_PASTE                        &none    &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
+&kp C_AL_CALC    &kp LS(LG(S))   &kp LC(A)           &kp LC(C)   		&kp C_AC_UNDO       	&kp LC(V)                        &none    &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
 &kp CAPS      &kp ESCAPE      &kp LC(LEFT_ARROW)  &kp UP_ARROW      &kp LC(RIGHT_ARROW)  &kp PG_UP                              &none  &none  &kp KP_N7       &kp KP_N8      &kp KP_N9        &kp KP_PLUS
-&kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp PG_DN                              &none  &none  &kp KP_N4       &kp KP_N5      &kp KP_N6        &kp KP_ENTER
+&kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp LC(Z)      &kp PG_DN                              &none  &none  &kp KP_N4       &kp KP_N5      &kp KP_N6        &kp KP_ENTER
 &tog 4        &kp LEFT_SHIFT  &kp C_PREV          &kp C_PLAY_PAUSE  &kp C_NEXT           &kp C_SNAPSHOT          &kp C_MUTE    		&none  &none  &kp KP_N1       &kp KP_N2      &kp KP_N3        &dtap_del
                               &none               &to 0             &kp LCTRL            &none            &none         &none  &to 0  &none  &kp N0          &kp DOT
 						                                                                   &kp K_APP      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>; 
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>; 
         };
 			
 		layer_4 {
@@ -187,7 +187,7 @@
 						                                                          &kp K_APP      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp C_VOL_UP C_VOL_DN>; 
+            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp PG_DN PG_UP>; 
         };
 };
 
