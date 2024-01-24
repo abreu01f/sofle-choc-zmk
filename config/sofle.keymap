@@ -55,7 +55,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LBKT>;
 
-            tapping-term-ms = <10`0>;
+            tapping-term-ms = <100>;
         };
 
         dtap_dot: dtap_dot {
