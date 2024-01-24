@@ -36,6 +36,13 @@
             layers = <0>;
         };
 
+	lspc_lent_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <52 51>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
         redo3tap {
             bindings = <&kp LC(Y)>;
             key-positions = <4 3 2>;
@@ -142,7 +149,6 @@
 						                                                                    &kp LC(LS(G))      &kp LC(Y)  &kp LBKT &kp LC(Z)  &kp RBKT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         l2_art {
@@ -156,7 +162,6 @@
 				                                                                      &trans      &trans  &trans &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_3 {
@@ -170,7 +175,6 @@
 						                                                                   &kp K_APP      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 			
 		layer_4 {
@@ -184,7 +188,6 @@
 						                                                          &kp K_APP      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 };
 
