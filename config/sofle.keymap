@@ -44,6 +44,7 @@
         redo3tap {
             bindings = <&kp LC(Y)>;
             key-positions = <4 3 2>;
+		timeout-ms = <20>;
             layers = <3>;
         };
     };
@@ -165,11 +166,11 @@
         layer_3 {
 			label = "layer_3";
             bindings = <
-&kp C_AL_CALC    &kp LS(LG(S))   &kp LC(A)           &kp LC(C)   		&kp LC(Z)       	&kp LC(V)                        &none    &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
-&kp CAPS      &kp ESCAPE      &kp LC(LEFT_ARROW)  &kp UP_ARROW      &kp LC(RIGHT_ARROW)  &kp PG_UP                              &none  &none  &kp KP_N7       &kp KP_N8      &kp KP_N9        &kp KP_PLUS
+&kp LC(H)    &kp LC(LS(4))   &kp LC(A)           &kp LC(C)   		&kp LC(Z)       	&kp LC(V)                        &none    &none  &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT
+&kp CAPS      &kp ESCAPE      &kp LA(LEFT_ARROW)  &kp UP_ARROW      &kp LA(RIGHT_ARROW)  &kp PG_UP                              &none  &none  &kp KP_N7       &kp KP_N8      &kp KP_N9        &kp KP_PLUS
 &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp PG_DN                              &none  &none  &kp KP_N4       &kp KP_N5      &kp KP_N6        &kp KP_ENTER
 &tog 4        &kp LEFT_SHIFT  &kp C_PREV          &kp C_PLAY_PAUSE  &kp C_NEXT           &kp LC(LS(3))          &kp C_MUTE    		&none  &none  &kp KP_N1       &kp KP_N2      &kp KP_N3        &dtap_del
-                              &none               &to 0             &kp LCTRL            &none            &none         &none  &to 0  &none  &kp N0          &kp DOT
+                              &none               &to 0             &kp LCTRL            &none            &none         &none  &to 0  &none  &kp KP_N0          &kp KP_DOT
 						                                                                   &kp CAPS      &kp RIGHT  &kp UP &kp LEFT  &kp DOWN
             >;
 
