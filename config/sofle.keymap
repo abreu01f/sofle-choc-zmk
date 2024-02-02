@@ -15,8 +15,7 @@
                    &kp LCTRL  &kp LALT  &kp LEFT_COMMAND  &kp DELETE  &kp RETURN          &kp C_MUTE  &kp SPACE  &to 0   &to 1      &kp ESCAPE
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_1 {
