@@ -2,4 +2,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Pinado no zmk upstream de 05/06/2024 (estado do último build verde deste
+    # repo, jul/2024). O @main atual é incompatível com o fork ergomechstore
+    # (Zephyr 3.2, out/2023) usado no west.yml.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@82eed0f5ddb05fc244385e0ac05704fbdec0c3ee
